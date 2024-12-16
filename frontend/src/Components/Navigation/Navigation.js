@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import avatar from '../../img/avatar.png'
 import { signout } from '../../utils/icons'
 import { menuItems } from '../../utils/menuItems'
 
-function Navigation() {
-    
+function Navigation({active, setActive}) {
+
     return (
         <NavStyled>
             <div className="user-con">
@@ -19,7 +19,8 @@ function Navigation() {
                 {menuItems.map((item) => {
                     return <li
                         key={item.id}
-                        
+                        onClick={() => setActive(item.id)}
+                        className={active === item.id ? 'active': ''}
                     >
                         {item.icon}
                         <span>{item.title}</span>
