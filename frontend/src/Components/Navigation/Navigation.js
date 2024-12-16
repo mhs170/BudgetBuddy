@@ -63,6 +63,31 @@ const NavStyled = styled.nav`
         h2{
             color: rgba(34, 34, 96, 1);
         }
+        p{
+            color: rgba(34, 34, 96, .6);
+        }
+        .menu-items{
+            flex: 1
+            display: flex;
+            flex-direction: column;
+            li{
+                display: grid;
+                grid-template-column: 40px auto;
+                align-items: center;
+                margin: .6rem 0;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+                color: rgba(34, 34, 96, 0.6);
+                padding-left: 1rem;
+                position: relative;
+                i{
+                    color: rgba(34, 34, 96, 0.6); 
+                    font-size: 1.4rem;
+                    transition: all .4s ease-in-out;
+                }
+            }
+        }
     }
 `;
 
