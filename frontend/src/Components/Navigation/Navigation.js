@@ -93,8 +93,22 @@ const NavStyled = styled.nav`
             }
         }
     }
-
     
+    .active{
+        color: rgba(34, 34, 96, 1);
+        i{
+            color: rgba(34, 34, 96, 1);
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #222260;
+            border-radius: 0 10px 10px 0;
+        }
     }
 `;
 
