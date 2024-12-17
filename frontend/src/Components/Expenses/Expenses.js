@@ -1,9 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { InnerLayout } from "../../Styles/Layouts";
 
 function Expenses() {
     return (
-        <ExpensesStyled>Expenses</ExpensesStyled>
+        <ExpensesStyled>
+            <InnerLayout>
+                            
+            </InnerLayout>
+        </ExpensesStyled>
     )
 }
 
