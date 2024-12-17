@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import styled from "styled-components";
 import bg from './img/bg.png';
 import {MainLayout} from './Styles/Layouts'
@@ -9,11 +9,14 @@ import Navigation from "./Components/Navigation/Navigation";
 function App() {
   const [active, setActive] = useState(1)
 
+  const orbMemo = useMemo(() => {
+    return <Orb />
+  }, [])
 
   
   return (
     <AppStyled bg={bg} className="App">
-      <Orb />
+      {orbMemo}
       <MainLayout>
         <Navigation active={active} setActive={setActive} />
       </MainLayout>
