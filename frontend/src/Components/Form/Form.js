@@ -9,7 +9,7 @@ function Form() {
     const [inputState, setInputState] = useState ({
         title: '',
         amount: '',
-        date: null,
+        date: '',
         category: '',
         description: '',
     })
@@ -61,7 +61,7 @@ function Form() {
                     <option value=""  disabled >Select Option</option>
                     <option value="salary">Salary</option>
                     <option value="freelancing">Freelancing</option>
-                    <option value="investments">Investiments</option>
+                    <option value="investments">Investments</option>
                     <option value="stocks">Stocks</option>
                     <option value="crypto">Crypto</option>
                     <option value="pension">Pension</option>
