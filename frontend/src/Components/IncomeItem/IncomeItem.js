@@ -1,5 +1,5 @@
 import React from "react";
-import { dollar, calendar, comment, trash } from '../../utils/icons';
+import { dollar, calendar, comment, trash, money, freelance, investments, stocks, crypto, pension } from '../../utils/icons';
 import styled from "styled-components";
 import Button from "../Button/Button";
 
@@ -14,6 +14,23 @@ function IncomeItem({
     indicatorColor,
     type
 }) {
+
+    const categoryIcon = () => {
+        switch(category) {
+            case 'salary':
+                return money;
+            case 'freelancing':
+                return freelance;
+            case 'investments':
+                return investments;
+            case 'stocks':
+                return stocks;
+            case 'crypto':
+                return crypto;
+            case 'pension':
+                return pension;
+        }
+    }
     return (
         <IncomeItemStyled indicator= {indicatorColor}>
             <div className="icon">
