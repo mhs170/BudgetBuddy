@@ -109,12 +109,12 @@ const FromStyled = styled.form`
     }
     .input-control{
         input{
-            width: 35%;
+            width: 100%;
         }
     }
     .selects{
         display: flex;
-        
+        justify-content: flex-end;
         select{
             color: rgba(34, 34, 96, 0.4);
             &:focus, &:active{
@@ -125,6 +125,9 @@ const FromStyled = styled.form`
     .submit-btn{
         button{
             box-shadow: 0px 1px 15px rgba(0,0,0,0.06);
+            &:hover{
+                background: var(--color-green) !important;
+            }
         }
     }
 `;
