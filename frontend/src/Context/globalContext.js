@@ -13,7 +13,7 @@ export const GlobalProvider = ({children}) => {
 
     const addIncome = async (income) => {
         const response = await axios.post(`${BASE_URL}add-income`, income)
-            .catch((err) => {
+            .catch((err) =>{
                 setError(err.response.data.message)
             })
     }
