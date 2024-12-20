@@ -19,9 +19,13 @@ export const GlobalProvider = ({children}) => {
     }
 
     const getIncomes = async () => {
-        const response = await axios.get(`${BASE_URL}get-incomes`)
+            const response = await axios.get(`${BASE_URL}get-incomes`)
             setIncomes(response.data)
             console.log(response.data)
+    }
+
+    const deleteIncome = async (id) => {
+        const res = await axios.delete(`${BASE_URL}delete-income/${id}`)
     }
 
 
@@ -29,7 +33,8 @@ export const GlobalProvider = ({children}) => {
         <GlobalContext.Provider value={{
             addIncome,
             getIncomes,
-            incomes
+            incomes,
+            deleteIncome
         }}>
             {children}
         </GlobalContext.Provider>
