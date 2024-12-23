@@ -1,5 +1,5 @@
 import React from "react";
-import { dollar, calendar, comment, trash, money, freelance, investments, stocks, crypto, pension, other, dashboard, food, healthcare, subscriptions, clothing, car, education } from '../../utils/icons';
+import { dollar, calendar, comment, trash, money, freelance, investments, stocks, crypto, pension, other, dashboard, food, healthcare, subscription, clothing, car, education } from '../../utils/icons';
 import styled from "styled-components";
 import Button from "../Button/Button";
 import { dateFormat } from "../../utils/dateFormat";
@@ -48,8 +48,8 @@ function IncomeItem({
                 return food;
             case 'healthcare':
                 return healthcare;
-            case 'subscriptions':
-                return subscriptions;
+            case 'subscription':
+                return subscription;
             case 'clothing':
                 return clothing;
             case 'education':

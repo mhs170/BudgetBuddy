@@ -18,6 +18,6 @@ export const other = <i className="fa-solid fa-ellipsis"></i>
 export const car = <i className="fa-solid fa-car"></i>
 export const food = <i className="fa-solid fa-utensils"></i>
 export const healthcare = <i className="fa-solid fa-notes-medical"></i>
-export const subscriptions = <i className="fa-solid fa-tv"></i>
-export const clothing = <i classname="fa-solid fa-shirt"></i>
+export const subscription = <i className="fa-solid fa-tv"></i>
+export const clothing = <i className="fa-solid fa-shirt"></i>
 export const education = <i className="fa-solid fa-school"></i>

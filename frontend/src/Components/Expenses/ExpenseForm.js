@@ -68,7 +68,7 @@ function ExpenseForm() {
                 <select required value={category} name="category" id="category" onChange={handleInput('category')}>
                     <option value="" disabled >Select Option</option>
                     <option value="rent/mortgage">Rent/Mortgage</option>
-                    <option value="car">Transportation</option>
+                    <option value="transportation">Transportation</option>
                     <option value="food">Groceries</option>
                     <option value="healthcare">Healthcare</option>
                     <option value="subscription">Subscription</option>
