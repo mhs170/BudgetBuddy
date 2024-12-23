@@ -35,7 +35,7 @@ function Form() {
     }
 
     return (
-        <FromStyled onSubmit={handleSubmit}>
+        <FormStyled onSubmit={handleSubmit}>
             <div className="input-control">
                 <input 
                 type="text" 
@@ -90,11 +90,11 @@ function Form() {
                     hColor={'red'}
                 />
             </div>
-        </FromStyled>
+        </FormStyled>
     )
 }
 
-const FromStyled = styled.form`
+const FormStyled = styled.form`
     display: flex;
     flex-direction: column;
     gap: 2rem;
