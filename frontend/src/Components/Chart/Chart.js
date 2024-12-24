@@ -3,20 +3,7 @@ import styled from "styled-components";
 import { useGlobalContext } from "../../Context/globalContext";
 import { dateFormat } from "../../utils/dateFormat";
 
-import {Chart as ChartJS, 
-        CategoryScale,
-        LinearScale,
-        PointElement,
-        LineElement,
-        Title,
-        Tooltip,
-        Legend,
-        ArcElement
-} from 'chart.js'
-
-import {Line} from 'react-chartjs-2'
-
-ChartJS.register(
+import {Chart as ChartJs, 
     CategoryScale,
     LinearScale,
     PointElement,
@@ -24,7 +11,20 @@ ChartJS.register(
     Title,
     Tooltip,
     Legend,
-    ArcElement
+    ArcElement,
+} from 'chart.js'
+
+import {Line} from 'react-chartjs-2'
+
+ChartJs.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+    ArcElement,
 )
 
 function Chart() {
@@ -45,7 +45,8 @@ function Chart() {
                         return amount
                     })
                 ],
-                backgroundColor: 'green'
+                backgroundColor: 'green',
+                tension: .2
             },
             {
                 label: 'Expenses',
@@ -55,14 +56,15 @@ function Chart() {
                         return amount
                     })
                 ],
-                backgroundColor: 'red'
+                backgroundColor: 'red',
+                tension: .2
             }
 
         ]
     }
     return (
         <ChartStyled>
-            <Line data = {data}/>
+            <Line data={data}/>
         </ChartStyled>
     )
 }
