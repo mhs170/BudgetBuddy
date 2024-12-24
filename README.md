@@ -18,3 +18,49 @@ Budget Buddy is a full-stack web application built using the MERN stack (MongoDB
 - **ReactJS:** Frontend library for building dynamic, responsive user interfaces.
 - **Node.js:** JavaScript runtime for executing server-side code.
 
+## How to Run the Project
+
+Follow these steps to run the project on your local machine:
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone <repository_url>
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd budget-buddy
+   ```
+
+3. Install dependencies for both the backend and frontend:
+   - For the backend:
+     ```bash
+     cd backend
+     npm install
+     ```
+   - For the frontend:
+     ```bash
+     cd ../frontend
+     npm install
+     ```
+
+4. Start the backend server:
+   ```bash
+   cd backend
+   npm start
+   ```
+
+5. Start the frontend development server:
+   ```bash
+   cd ../frontend
+   npm start
+   ```
+
+6. Open your browser and navigate to `http://localhost:3000` to use the application.
+
+## Additional Notes
+
+- Ensure you have Node.js and MongoDB installed on your system before running the project.
+- Create a `.env` file in the `backend` folder to set up environment variables such as the database connection string.
+
+Enjoy managing your expenses with **Budget Buddy**!
