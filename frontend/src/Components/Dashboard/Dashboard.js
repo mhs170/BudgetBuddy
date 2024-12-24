@@ -4,6 +4,7 @@ import { InnerLayout } from "../../Styles/Layouts";
 import Chart from "../Chart/Chart";
 import { dollar } from "../../utils/icons";
 import { useGlobalContext } from "../../Context/globalContext";
+import History from "../History/History";
 
 function Dashboard() {
     const {totalExpenses, totalIncome, totalBalance, getIncomes, getExpenses} = useGlobalContext()
@@ -42,7 +43,7 @@ function Dashboard() {
                     </div>
                 </div>
                 <div className="history-con">
-
+                    <History />
                 </div>
                </div>
             </InnerLayout>
